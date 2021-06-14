@@ -1,16 +1,17 @@
 .whyus {
   padding-bottom: 0;
 }
-.whyus-menu-list {
+.whyus-menu {
   display: flex;
 }
-.whyus-menu-item {
+.whyus-menu__item {
   width: 270px;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
 }
-.whyus-menu-item:not(:first-child) {
-  margin-left: 30px;
-}
-.whyus-preimage {
+.whyus-menu__preimage {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,47 +20,16 @@
   background-color: var(--aboutus-background-color);
   margin-bottom: 30px;
 }
-.whyus-icon {
+.whyus-menu__icon {
   width: 70px;
 }
-.whyus-menu-item-title {
+.whyus-menu__item-title {
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.whyus-menu-item-description {
+.whyus-menu__item-description {
   line-height: 1.71;
   color: var(--secondary-text-color);
-}
-/* ============= WHAT WE DO ============= */
-.whatwedo-menu {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-.whatwedo-menu-item {
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
-  margin-top: 30px;
-}
-.label-whatwedo {
-  position: relative;
-}
-.overlay-whatwedo {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--main-background-color);
-  background-color: var(--overlay-whatwedo-bg);
 }

@@ -16,15 +16,18 @@
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
-.customers-list-link:hover,
-.customers-list-link:focus {
-  border: 1px solid var(--accent-color);
-}
+
 .customers-list-icon {
   fill: var(--main-icon-color);
-}
-.customers-list-link:hover .customers-list-icon,
-.customers-list-link:focus .customers-list-icon {
-  fill: var(--accent-color);
+
+  .customers-list-link:hover &,
+  .customers-list-link:focus & {
+    fill: var(--accent-color);
+  }
 }
