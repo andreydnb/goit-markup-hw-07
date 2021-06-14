@@ -4,15 +4,15 @@
   margin-left: -30px;
   margin-top: -30px;
 }
-.whatwedo-menu-item {
+.whatwedo-menu__item {
   flex-basis: calc((100% - 90px) / 3);
   margin-left: 30px;
   margin-top: 30px;
 }
-.label-whatwedo {
+.whatwedo-menu__label {
   position: relative;
 }
-.overlay-whatwedo {
+.whatwedo-menu__overlay {
   position: absolute;
   bottom: 0;
   left: 0;

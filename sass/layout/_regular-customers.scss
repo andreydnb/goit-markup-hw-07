@@ -1,10 +1,13 @@
 .customers-list {
   display: flex;
 }
-.customers-list-item:not(:last-child) {
-  margin-right: 30px;
+.customers-list__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.customers-list-link {
+
+.customers-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,11 +26,11 @@
   }
 }
 
-.customers-list-icon {
+.customers-list__icon {
   fill: var(--main-icon-color);
 
-  .customers-list-link:hover &,
-  .customers-list-link:focus & {
+  .customers-list__link:hover &,
+  .customers-list__link:focus & {
     fill: var(--accent-color);
   }
 }
