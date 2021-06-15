@@ -252,8 +252,6 @@ body {
 }
 
 .icon-check {
-  display: inline-block;
-  vertical-align: middle;
   width: 16px;
   height: 15px;
   border: 2px solid #2f303a;
